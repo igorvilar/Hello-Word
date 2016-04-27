@@ -16,8 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUi-BU-HjB">
+                                <rect key="frame" x="150" y="90" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="plV-uW-GtA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eUi-BU-HjB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="5cX-H7-Jjh"/>
+                            <constraint firstItem="eUi-BU-HjB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f8i-ko-NqR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eUi-BU-HjB" secondAttribute="bottom" constant="489" id="j8j-08-Lxa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textHome" destination="eUi-BU-HjB" id="XpG-7U-XjF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
